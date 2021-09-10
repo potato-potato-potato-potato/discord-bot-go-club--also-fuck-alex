@@ -37,7 +37,6 @@ def createFramedImage(username, byte_avatar_image, text, time="Yesterday at 9:20
   imageCanvas = Image.open("../assets/DiscordBackground.png", "r") 
 
   pfp = Image.open(io.BytesIO(byte_avatar_image))
-
   pfp = pfp.resize((150,150))
 
   pfpBoarder = Image.open("../assets/DiscordBlackPFPBoarder.png", "r")
